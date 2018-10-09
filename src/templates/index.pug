@@ -1,0 +1,96 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	//- section.home_slider
+	//- 	.container-fluid
+	//- 		figure.mb-0
+	//- 			img(src="./img/home_slider_1.png", alt="logo")
+	.owl-carousel.owl-theme
+		.item
+			img(src="./img/home_slider_1.png", alt="")
+		.item
+			img(src="./img/home_slider_2.png", alt="")
+		.item
+			img(src="./img/home_slider_3.png", alt="")
+		.owl-nav
+			.owl-prev prev
+			.owl-next next
+	section.home_banner
+		.container-fluid.pb-5
+			.row.mb-3
+				.col-md-8
+					figure
+						img.img-fluid(src="./img/home_banner_1.png", alt="")
+				.col-md-4
+					figure
+						img.img-fluid(src="./img/home_product_1.png", alt="")
+			.row.mb-5
+				.col-md-4
+					figure
+						img.img-fluid(src="./img/home_product_2.png", alt="")
+				.col-md-4
+					figure
+						img.img-fluid(src="./img/home_product_3.png", alt="")
+				.col-md-4
+					figure
+						img.img-fluid(src="./img/home_product_4.png", alt="")
+	section.home_sale
+		.container-fluid
+			.row.text-center.pb-5
+				.col.text_sale
+					h1 Top pieces on sale
+			.row.icon
+				.col-md-3
+					figure
+						img(src="./img/home_product_5.png", alt="")
+					h5 Ice cream - Sweety Brown
+					p 650,000 VNĐ
+					p
+						a(href="http://") 	CONTACT
+				.col-md-3
+					figure
+						img(src="./img/home_product_6.png", alt="")
+					h5 Ice cream - Sweety Gray
+					p 750,000 VNĐ
+					p
+						a(href="http://") CONTACT
+				.col-md-3
+					figure
+						img(src="./img/home_product_7.png", alt="")
+					h5 Moisture - Aria gray
+					p 320,000 VNĐ
+					p
+						a(href="http://") CONTACT
+				.col-md-3
+					figure
+						img(src="./img/home_product_8.png", alt="")
+					h5 Saigon Nigh - Moonlight
+					p 320,000 VNĐ
+					p
+						a(href="http://") CONTACT
+			.row.pt-4.pb-5
+				.col
+					figure
+						img(src="./img/home_banner_2.png", alt="")
+	section.home_best
+		.container-fluid.text-center
+			.row.pt-5
+				.col
+					h2 BEST SELLERS
+			.row.iconbest
+				.col-md-8
+					figure
+						img(src="./img/home_product_10.png", alt="")
+				.col-md-4
+					.txt
+						figure
+							img(src="./img/home_product_9.png", alt="")
+						h5 Ice cream - Sweety Gray
+						p 750,000 VNĐ
+						p.text
+							a(href="#") VIEW MORE
